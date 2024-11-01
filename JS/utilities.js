@@ -14,5 +14,13 @@ function getTextFieldValueById(id){
 };
 
 function showSectionById(id){
-    
-}
+
+    // Hide all the sections
+    document.getElementById('add-money-form').classList.add('hidden');
+    document.getElementById('cash-out-form').classList.add('hidden');
+    document.getElementById('transaction-section').classList.add('hidden');
+
+    // show the section with the provided id as parameter
+    document.getElementById(id).classList.remove('hidden'); //aage sob remove, erpor jar id ana hbe tar theke hidden sore jabe
+
+};
