@@ -9,6 +9,7 @@ document.getElementById('btn-cash-out').addEventListener('click' , function(even
         const newBalance = balance - cashOut;
         document.getElementById("account-balance").innerText = newBalance;
 
+
     }
     else{
         alert('Wrong input! try again!');
