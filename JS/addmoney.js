@@ -3,6 +3,13 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
 
     const addMoney = getInputFieldValueById("input-add-money"); //ekhane common function er jnno je id parameter chilo sei id er jnno ekhane "input-add-money" id ta dite hbe.
     const pinNumber = getInputFieldValueById("input-pin-number");
+
+    // data validation
+
+    if(isNaN(addMoney)){
+        alert('Failed to add money!');
+        return;
+    }
  
     // wrong way to verify, never try it in your serious website
     if(pinNumber === 1234){
